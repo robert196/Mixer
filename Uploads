@@ -1,0 +1,14 @@
+<form action="/file-upload"
+      class="dropzone"
+      id="my-awesome-dropzone"></form>
+<input type="file" name="file" />
+<form action="/file-upload" class="dropzone">
+  <div class="fallback">
+    <input name="file" type="file" multiple />
+  </div>
+</form>
+var myDropzone = new Dropzone("div#myId", { url: "/file/post"});
+$("div#myId").dropzone({ url: "/file/post" });
+<form action="" method="post" enctype="multipart/form-data">
+  <input type="file" name="file" />
+</form>
